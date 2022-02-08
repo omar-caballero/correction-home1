@@ -13,6 +13,18 @@ body{
 	word-spacing: 0.2em;
 }
 
+.logo{
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	margin-left: auto;
+}
+
+.derecha{
+	margin-left: auto;
+	align-self: flex-end;
+}
+
 .caption-center{
 	top: 40%;
 }
