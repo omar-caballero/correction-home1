@@ -1,0 +1,91 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pad{
+	padding: 0 20% 0 20%;
+	word-spacing: 0.2em;
+}
+
+.caption-center{
+	top: 40%;
+}
+.navbar-nav > li{
+	margin-left : 2em;
+    margin-right : 2em;
+}
+
+.center{
+	text-align: center;
+	padding: 2% 0 2% 0;
+}
+
+.fresa{
+	background-image:url('parallax.jpg');
+	height: 400px;
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.justify{
+	color: rgb(175, 175, 169);
+    text-align: justify;
+}
+
+.negrita{
+	font-weight: bolder;
+}
+
+.column {
+    float: center;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.receta{
+	background-image: url(background.jpg);
+	background-position: center center;
+  	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.gridrec{
+	padding: 10%;
+	display: grid;
+    grid-template-columns : repeat(auto-fit ,minmax(20rem,1fr));  
+}
+
+.textcebolla{
+	padding: 30% 10% 5% 5%;
+	background-color: white;
+	background-size:  auto 100%;
+}
+
+.justify{
+    text-align: justify;
+}	
+.galeria{
+	text-align: center;
+	display: grid;
+    grid-template-columns :  repeat(auto-fit ,minmax(20rem,1fr));
+	gap: 7.5%;	
+}
+
+.footer{
+	padding: 5% 0 0 0;
+	background-image: url(footer.png);
+	background-position: center;
+  	background-repeat: no-repeat;
+}
