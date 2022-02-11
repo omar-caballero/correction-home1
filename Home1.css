@@ -8,6 +8,22 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.resaltar:hover {
+    text-decoration-line: overline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+}
+
+.resaltg {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-thickness: 4px;
+}
+
+p {
+    padding: 20px;
+}
+
 .pad {
     padding: 0 20% 0 20%;
     word-spacing: 0.2em;
@@ -21,8 +37,18 @@ body {
 }
 
 .derecha {
-    margin-left: auto;
-    align-self: flex-end;
+    display: grid;
+    justify-content: end;
+    margin-left: 15px;
+    margin-top: -30px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(f-2.png);
+}
+
+.carousel-control-next-icon {
+    background-image: url(f-1.png);
 }
 
 .caption-center {
@@ -30,8 +56,8 @@ body {
 }
 
 .navbar-nav>li {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 70px;
+    margin-right: 70px;
 }
 
 .center {
@@ -99,6 +125,13 @@ body {
     gap: 7.5%;
 }
 
+.hr {
+    background-color: red;
+    height: 5px;
+    margin-left: 40px;
+    width: 300px;
+}
+
 .footer {
     padding: 5% 0 0 0;
     background-image: url(footer.png);
@@ -107,16 +140,9 @@ body {
     background-size: 100% auto;
 }
 
-@media (max-width: 576px) {
-    .icono {
-        height: 50px;
-    }
-    .navbar-toggler {
-        padding: 2px;
-        font-size: 6px;
-    }
+@media (max-width: 321px) {
     h5 {
-        font-size: 6px;
+        font-size: 0.375rem;
     }
     h4 {
         font-size: 8px;
@@ -129,38 +155,806 @@ body {
     }
     p {
         font-size: 6px;
+        padding: 2px;
     }
-    .gridrec {
-        padding: 5%;
+    img {
+        height: 100px;
+    }
+    .icono {
+        height: 40px;
+    }
+    .derecha {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+        justify-content: end;
+        margin-left: 0px;
+        margin-top: -10px;
     }
-    .img-h {
-        height: 150px;
+    .navbar-toggler {
+        padding: 2px;
+        font-size: 6px;
     }
-    .textcebolla {
-        padding: 15% 5% 5% 5%;
-        background-color: white;
-        background-size: auto 100%;
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
     }
     .caption-center {
-        top: 24%;
+        top: 20%;
+    }
+    .img-h {
+        height: 120px;
+    }
+    .pad {
+        padding: 0;
+        word-spacing: 0em;
     }
     .fresa {
-        height: 100px;
+        height: 80px;
         background-size: cover;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: initial;
     }
+    .gridrec {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 5px 2px 2px 2px;
+        background-color: white;
+        background-size: auto 100%;
+    }
     .galeria {
         text-align: center;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        gap: 0%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2px;
+    }
+    .hr {
+        background-color: red;
+        height: 3px;
+        margin-left: 7.375rem;
+        width: 4rem;
+    }
+}
+
+@media (max-width: 376px)and (min-width: 321px) {
+    h5 {
+        font-size: 8px;
+    }
+    h4 {
+        font-size: 10px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    a {
+        font-size: 8px;
+    }
+    p {
+        font-size: 6px;
+        padding: 2px;
+    }
+    img {
+        height: 110px;
+    }
+    .icono {
+        height: 45px;
+    }
+    .derecha {
+        display: grid;
+        justify-content: end;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    .navbar-toggler {
+        padding: 2px;
+        font-size: 6px;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+    .caption-center {
+        top: 20%;
+    }
+    .img-h {
+        height: 120px;
+    }
+    .pad {
+        padding: 0;
+        word-spacing: 0em;
+    }
+    .fresa {
+        height: 80px;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+    }
+    .gridrec {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 18px 4px 4px 20px;
+        background-color: white;
+        background-size: auto 100%;
+    }
+    .img-cebolla {
+        height: 120px;
+    }
+    .galeria {
+        padding: 5px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 4px;
+    }
+    .hr {
+        background-color: red;
+        height: 3px;
+        margin-left: 138px;
+        width: 90px;
+    }
+}
+
+@media (max-width: 426px)and (min-width: 376px) {
+    h5 {
+        font-size: 10px;
+    }
+    h4 {
+        font-size: 12px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    a {
+        font-size: 10px;
+    }
+    p {
+        font-size: 8px;
+        padding: 3px;
     }
     img {
         height: 120px;
     }
+    .icono {
+        height: 50px;
+    }
+    .derecha {
+        display: grid;
+        justify-content: end;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+    .navbar-toggler {
+        padding: 2px;
+        font-size: 6px;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+    .caption-center {
+        top: 20%;
+    }
+    .img-h {
+        height: 120px;
+    }
+    .pad {
+        padding: 0;
+        word-spacing: 0em;
+    }
+    .fresa {
+        height: 80px;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+    }
+    .gridrec {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 20px 4px 2px 16px;
+        background-color: white;
+        background-size: auto 100%;
+    }
+    .img-cebolla {
+        height: 142px;
+    }
+    .galeria {
+        padding: 7px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 5px;
+    }
+    .hr {
+        background-color: red;
+        height: 3px;
+        margin-left: 156px;
+        width: 100px;
+    }
 }
+
+@media (max-width: 769px)and (min-width: 426px) {
+    h5 {
+        font-size: 12px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    a {
+        font-size: 10px;
+    }
+    p {
+        font-size: 10px;
+        padding: 4px;
+    }
+    img {
+        height: 240px;
+    }
+    .icono {
+        height: 90px;
+    }
+    .derecha {
+        display: grid;
+        justify-content: end;
+        margin-left: 15px;
+        margin-top: -20px;
+    }
+    .navbar-toggler {
+        padding: 6px;
+        font-size: 12px;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+    .caption-center {
+        top: 25%;
+    }
+    .img-h {
+        height: 230px;
+    }
+    .pad {
+        padding: 0;
+        word-spacing: 0em;
+    }
+    .fresa {
+        height: 80px;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: initial;
+    }
+    .gridrec {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 69px 15px 30px 34px;
+        background-color: white;
+        background-size: auto 100%;
+    }
+    .img-cebolla {
+        height: 250px;
+    }
+    .galeria {
+        padding: 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 20px;
+    }
+    .hr {
+        background-color: red;
+        height: 5px;
+        margin-left: 225px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 993px)and (min-width: 769px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    a {
+        font-size: 12px;
+    }
+    p {
+        font-size: 14px;
+        padding: 4px;
+    }
+    img {
+        height: 300px;
+    }
+    .icono {
+        height: 100px;
+    }
+    .derecha {
+        display: grid;
+        justify-content: end;
+        margin-left: 15px;
+        margin-top: -20px;
+    }
+    .navbar-toggler {
+        padding: 6px;
+        font-size: 12px;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+    .caption-center {
+        top: 25%;
+    }
+    .img-h {
+        height: 260px;
+    }
+    .pad {
+        padding: 0;
+        word-spacing: 0em;
+    }
+    .fresa {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .gridrec {
+        padding: 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 92px 26px 50px 58px;
+        background-color: white;
+        background-size: auto 100%;
+    }
+    .img-cebolla {
+        height: 340px;
+    }
+    .galeria {
+        padding: 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 20px;
+    }
+    .hr {
+        background-color: red;
+        height: 6px;
+        margin-left: 324px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 1201px)and (min-width: 993px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    a {
+        font-size: 18px;
+    }
+    p {
+        font-size: 18px;
+        padding: 4px;
+    }
+    img {
+        height: 380px;
+    }
+    .icono {
+        height: 140px;
+    }
+    .derecha {
+        display: grid;
+        justify-content: end;
+        margin-left: 15px;
+        margin-top: -20px;
+    }
+    .navbar-toggler {
+        padding: 6px;
+        font-size: 12px;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+    .caption-center {
+        top: 35%;
+    }
+    .img-h {
+        height: 300px;
+    }
+    .pad {
+        padding: 0 120px;
+        word-spacing: 0.4em;
+    }
+    .fresa {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .gridrec {
+        padding: 13%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 70px 30px 40px 50px;
+        background-color: white;
+        background-size: auto 100%;
+    }
+    .galeria {
+        padding: 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        gap: 30px;
+    }
+    .hr {
+        background-color: red;
+        height: 6px;
+        margin-left: 360px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 1441px)and (min-width: 1201px) {
+    h5 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    a {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+        padding: 4px;
+    }
+    .img-cebolla {
+        height: 420px;
+    }
+    img {
+        height: 330px;
+    }
+    .icono {
+        height: 160px;
+    }
+    .derecha {
+        display: grid;
+        justify-content: end;
+        margin-left: 0px;
+        margin-top: -28px;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+    .caption-center {
+        top: 30%;
+    }
+    .img-h {
+        height: 340px;
+    }
+    .pad {
+        padding: 0 120px;
+        word-spacing: 0.4em;
+    }
+    .fresa {
+        height: 270px;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .gridrec {
+        padding: 13%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 100px 40px 40px 40px;
+        background-color: white;
+        background-size: auto 100%;
+    }
+    .galeria {
+        padding: 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+    }
+    .hr {
+        background-color: red;
+        height: 8px;
+        margin-left: 24px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 1601px)and (min-width: 1441px) {
+    h5 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 48px;
+    }
+    a {
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+        padding: 4px;
+    }
+    .img-cebolla {
+        height: 480px;
+    }
+    img {
+        height: 330px;
+    }
+    .icono {
+        height: 180px;
+    }
+    .derecha {
+        display: grid;
+        justify-content: end;
+        margin-left: 80px;
+        margin-top: -25px;
+    }
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+    .caption-center {
+        top: 30%;
+    }
+    .img-h {
+        height: 400px;
+    }
+    .pad {
+        padding: 0 120px;
+        word-spacing: 0.4em;
+    }
+    .fresa {
+        height: 290px;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .gridrec {
+        padding: 13%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 100px 40px 40px 40px;
+        background-color: white;
+        background-size: auto 100%;
+    }
+    .galeria {
+        padding: 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+    }
+    .hr {
+        background-color: red;
+        height: 8px;
+        margin-left: 24px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 1901px)and (min-width: 1601px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1700px;
+    }
+    h5 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 60px;
+    }
+    a {
+        font-size: 28px;
+    }
+    p {
+        font-size: 26px;
+        padding: 8px;
+    }
+    img {
+        height: 380px;
+    }
+    .icono {
+        height: 220px;
+    }
+    .derecha {
+        display: grid;
+        justify-content: end;
+        margin-left: -40px;
+        margin-top: -25px;
+    }
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        padding-bottom: 1.5rem;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+    .caption-center {
+        top: 35%;
+    }
+    .img-h {
+        height: 450px;
+    }
+    .pad {
+        padding: 0 120px;
+        word-spacing: 0.4em;
+    }
+    .center {
+        text-align: center;
+        padding: 3% 0 3% 0;
+    }
+    .fresa {
+        height: 340px;
+        background-size: cover;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .gridrec {
+        padding: 8%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    }
+    .textcebolla {
+        padding: 140px 40px 50px 70px;
+        background-color: white;
+        background-size: auto 100%;
+    }
+    .img-cebolla {
+        height: 630px;
+    }
+    .galeria {
+        padding: 30px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 30px;
+    }
+    .hr {
+        background-color: red;
+        height: 8px;
+        margin-left: 75px;
+        width: 380px;
+    }
+}
+
+320,
+375,
+425,
+768,
+992,
+1200,
+1440,
+1600,
+1900
